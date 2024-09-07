@@ -75,6 +75,11 @@ button {
     border: none;
     border-radius: 5px;
     margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
 }
 
 footer {
@@ -82,4 +87,17 @@ footer {
     color: #fff;
     padding: 10px 0;
     text-align: center;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="date"], select {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+input[type="text"]:invalid, input[type="email"]:invalid, input[type="password"]:invalid, input[type="date"]:invalid, select:invalid {
+    border: 2px solid red;
+}
+
+input[type="text"]:valid, input[type="email"]:valid, input[type="password"]:valid, input[type="date"]:valid, select:valid {
+    border: 1px solid #ccc;
 }
